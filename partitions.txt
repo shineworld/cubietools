@@ -1,0 +1,59 @@
+# partition table of /dev/sdc
+
+
+# DEVICE: SONY 8GB SR-8C4
+# 
+#   1020 cylinders
+#    239 heads
+#     62 sectors
+#
+#      1 sector = 512 byte
+#      1 cylender = 239 * 62 = 14818 sectors
+#      1 cylinder = 14818 * 512 = 7586816 bytes
+#
+#      1 disk = 1020 * 239 * 62 = 15114360 sectors
+#      1 disk = 15114360 * 512 = 7738552320 bytes	
+#
+#   PS: remember to leave 1 cylinder after begin of exetended partition	
+#
+#unit: sectors
+#
+#/dev/sdc1 : start=    14818, size=    29636, Id=6
+#/dev/sdc2 : start=    44454, size=    59272, Id=83
+#/dev/sdc3 : start=   103726, size=  1052078, Id=83
+#/dev/sdc4 : start=  1155804, size= 13958556, Id=5
+#/dev/sdc5 : start=  1170622, size=  4208312, Id=83
+#/dev/sdc6 : start=  5378934, size=    29636, Id=83
+#/dev/sdc7 : start=  5408570, size=    59272, Id=83
+#/dev/sdc8 : start=  5467842, size=   533448, Id=83
+#/dev/sdc9 : start=  6001290, size=    29636, Id=83
+#/dev/sdc10: start=  6030926, size=  2104156, Id=b
+
+
+#  DEVICE: Samsung 16GB
+#
+#  15423 cylinders
+#     64 heads
+#     32 sectors
+#
+#      1 sector = 512 byte
+#      1 cylender = 64 * 32 = 2048 sectors
+#      1 cylinder = 2048 * 512 = 1048576 bytes
+#
+#      1 disk = 15423 * 64 * 32 = 31586304 sectors
+#      1 disk = 31586304 * 512 = 16172187648 bytes	
+#
+#  I/O size (minimum/optimal): 512 bytes / 512 bytes
+unit: sectors
+
+/dev/sdc1 : start=    14336, size=    28672, Id=6
+/dev/sdc2 : start=    43008, size=    59392, Id=83
+/dev/sdc3 : start=   102400, size=  1050624, Id=83
+/dev/sdc4 : start=  1153024, size= 13957120, Id=5
+/dev/sdc5 : start=  1155072, size=  4206592, Id=83
+/dev/sdc6 : start=  5361664, size=    28672, Id=83
+/dev/sdc7 : start=  5390336, size=    59392, Id=83
+/dev/sdc8 : start=  5449728, size=   532480, Id=83
+/dev/sdc9 : start=  5982208, size=    28672, Id=83
+/dev/sdc10: start=  6010880, size=  1048576, Id=83
+/dev/sdc11: start=  7059456, size=  1048576, Id=b
